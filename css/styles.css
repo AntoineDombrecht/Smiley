@@ -1,0 +1,32 @@
+body
+{
+	background-color:#2AC2D4;
+}
+
+#smiley
+{
+	background-color: #ffff80;
+	width: 300px;
+	height: 300px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+}
+
+#eye1, #eye2
+{
+	background-color: #262626;
+	width: 40px;
+	height: 70px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+	cursor: pointer;
+}
+
+#mouth{
+  width: 200px; height:250px;
+  border: solid 10px #262626;
+  border-color: transparent transparent #262626 transparent;
+  border-radius: 200px 200px 200px 200px;
+}

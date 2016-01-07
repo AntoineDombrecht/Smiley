@@ -1,2 +1,2 @@
 # Smiley
-Jquery animated smiley face.
+An animated smiley face built using JQuery Keyframes.

@@ -1,17 +1,17 @@
 var interval = 3000;
 
 function blink() {
-  $("#eye1").playKeyframe({
-    name: 'eye1blink',
+  $("#eyeL").playKeyframe({
+    name: 'eyeLblink',
     duration: '200ms',
     timingFunction: 'linear',
-    complete: function(){$("#eye1").resetKeyframe();}
+    complete: function(){$("#eyeL").resetKeyframe();}
   });
-  $("#eye2").playKeyframe({
-    name: 'eye2blink',
+  $("#eyeR").playKeyframe({
+    name: 'eyeRblink',
     duration: '200ms',
     timingFunction: 'linear',
-    complete: function(){$("#eye2").resetKeyframe();}
+    complete: function(){$("#eyeR").resetKeyframe();}
   });
 
   interval = Math.random() * (6000 - 3000) + 3000;
@@ -20,35 +20,37 @@ function blink() {
 
 setTimeout(blink, interval);
 
-$("#smiley").mouseenter(function() {
-  $("#eye1").pauseKeyframe();
-  $("#eye2").pauseKeyframe();
-  $("#smiley").playKeyframe({
+$(".smiley").click(function() {
+  $("#eyeL").pauseKeyframe();
+  $("#eyeR").pauseKeyframe();
+  $(".smiley").playKeyframe({
     name: 'roll',
     duration: '700ms',
     timingFunction: 'ease',
     complete: function(){
-      $("#smiley").resetKeyframe();
-      $("#eye1").resumeKeyframe();
-      $("#eye2").resumeKeyframe();
+      $(".smiley").resetKeyframe();
+      $("#eyeL").resumeKeyframe();
+      $("#eyeR").resumeKeyframe();
     }
   });
+}).children(".eye").click(function(e) {
+  return false;
 });
 
-$("#eye1").click(function() {
-  $("#eye1").playKeyframe({
-    name: 'eye1blink',
+$("#eyeL").click(function() {
+  $("#eyeL").playKeyframe({
+    name: 'eyeLblink',
     duration: '200ms',
     timingFunction: 'linear',
-    complete: function(){$("#eye1").resetKeyframe();}
+    complete: function(){$("#eyeL").resetKeyframe();}
   });
 });
 
-$("#eye2").click(function() {
-  $("#eye2").playKeyframe({
-    name: 'eye2blink',
+$("#eyeR").click(function() {
+  $("#eyeR").playKeyframe({
+    name: 'eyeRblink',
     duration: '200ms',
     timingFunction: 'linear',
-    complete: function(){$("#eye2").resetKeyframe();}
+    complete: function(){$("#eyeR").resetKeyframe();}
   });
 });

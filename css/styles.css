@@ -3,7 +3,7 @@ body
 	background-color:#2AC2D4;
 }
 
-#smiley
+.smiley
 {
 	background-color: #ffff80;
 	width: 300px;
@@ -13,7 +13,7 @@ body
   border-radius: 200px;
 }
 
-#eye1, #eye2
+.eye
 {
 	background-color: #262626;
 	width: 40px;
@@ -23,7 +23,8 @@ body
   border-radius: 150px;
 }
 
-#mouth{
+.mouth
+{
   width: 200px; height:250px;
   border: solid 10px #262626;
   border-color: transparent transparent #262626 transparent;

@@ -1,12 +1,14 @@
+var supportedFlag = $.keyframe.isSupported();
+
 $.keyframe.define([
   {
-    name: 'eye1blink',
+    name: 'eyeLblink',
     '0%': {'height': '70px', 'margin-top': '60px'},
     '50%': {'height': '2px', 'width': '70px', 'margin-left': '40px', 'margin-top': '90px'},
     '100%': {'height': '70px', 'margin-top': '60px'}
   },
   {
-    name: 'eye2blink',
+    name: 'eyeRblink',
     '0%': {'height': '70px', 'margin-top': '60px'},
     '50%': {'height': '2px', 'width': '70px', 'margin-left': '180px', 'margin-top': '90px'},
     '100%': {'height': '70px', 'margin-top': '60px'}

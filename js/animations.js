@@ -20,7 +20,7 @@ function blink() {
 
 setTimeout(blink, interval);
 
-function roll() {
+$("#smiley").mouseenter(function() {
   $("#eye1").pauseKeyframe();
   $("#eye2").pauseKeyframe();
   $("#smiley").playKeyframe({
@@ -33,12 +33,7 @@ function roll() {
       $("#eye2").resumeKeyframe();
     }
   });
-
-  interval = Math.random() * (15000 - 10000) + 10000;
-  setTimeout(roll, interval);
-}
-
-setTimeout(roll, interval);
+});
 
 $("#eye1").click(function() {
   $("#eye1").playKeyframe({
